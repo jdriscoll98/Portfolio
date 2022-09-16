@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template: 1fr / 1fr 4fr;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+/* Profile section */
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile img {
+    border-radius: 25%;
+    width: 50%;
+}
+
+.profile h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+/* Portfolio section */
+.portfolio {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.portfolio img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.portfolio .project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.images {
+    width: 35%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+div.images img {
+    width: calc(50% - 0.5rem);
+    height: auto;
+}
+div.info {
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.portfolio .title {
+    font-size: 2rem;
+}
+.portfolio .description {
+    font-size: 1.2rem;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
