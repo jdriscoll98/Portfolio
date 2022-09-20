@@ -1,84 +1,96 @@
 <!-- create an html doc -->
 <html>
-    <head>
-        <title>Jack Driscoll</title>
-        <!-- import css -->
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="profile">
-                <img src="profile.jpeg" />
-                <h1>Jack Driscoll</h1>
-                <h3>Software Engineer</h3>
-            </div>
-            <div class="portfolio">
-                <div class="project">
-                    <div class="images">
-                        <img src="vue.png" />
-                        <img src="django-logo.png" />
-                        <img src="docker.webp" />
-                    </div>
-                    <div class="info">
-                        <h3 class="title">When2Meet.me</h3>
-                        <p class="description">A web based scheduling app. Utilizes Vue 3 for the frontend, Django Rest Framework for the backend, and docker to hold it all together.</p>    
-                        <p>Skills:</p>
-                        <ul>
-                            <li>Vue 3</li>
-                            <li>Django Rest Framework</li>
-                            <li>Docker</li>
-                        </ul>  
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="images">
-                        <img src="react.png" />
-                        <img src="eth.png" />
-                    </div>
-                    <div class="info">
-                        <h3 class="title">Blockchain Education</h3>
-                        <p class="description">An online course website built using React.JS, Solidity, and Express. Teaches the fundamentals of blockchain development and provides an in house code editor to compile and deploy smart contracts.</p>    
-                        <p>Skills:</p>
-                        <ul>
-                            <li>React</li>
-                            <li>Solidity</li>
-                            <li>Project management</li>
-                        </ul>  
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="images">
-                        <img src="stencil.png" />
-                        <img src="angular.svg" />
-                        <img src="nest.png" />
-                    </div>
-                    <div class="info">
-                        <h3 class="title">Ignite Design System</h3>
-                        <p class="description">A library of 100+ UI components and design tokens used by hundreds of developers across an enterprise HR company. Also, a custom built documentation website built in Angular 13+ and a NestJs backend</p>    
-                        <p>Skills:</p>
-                        <ul>
-                            <li>Software Development Life Cylce</li>
-                            <li>Code review, teamwork, semantic versioning</li>
-                            <li>Communication and collaboration</li>
-                        </ul>  
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="images">
-                        <img src="p5js.svg" />
-                    </div>
-                    <div class="info">
-                        <h3 class="title">Golf.AI</h3>
-                        <p class="description">A simple but fun web app to build a mini golf course and have the computer learn the optimal way to reach the end. Built using p5.js and path finding algorithms.</p>    
-                        <p>Skills:</p>
-                        <ul>
-                            <li>Path finding algorithms</li>
-                            <li>Machine learning</li>
-                            <li>HTML Canvas development</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <head>
+    <title>Jack Driscoll</title>
+    <!-- import css -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile">
+        <img src="profile.jpeg" />
+        <h1>Jack Driscoll</h1>
+        <h3>Software Engineer</h3>
+        <div class="contact">
+          <a href="github.com" target="_blank">
+            <img src="github.svg" />
+          </a>
+          <a href="linkedin.com" target="_blank">
+            <img src="linkedin.svg" />
+          </a>
         </div>
-    </body>
+      </div>
+      <div class="portfolio">
+        <div class="project">
+          <h3 class="title">When2Meet.me</h3>
+          <div class="images">
+            <img src="vue.png" />
+            <img src="django-logo.png" />
+            <img src="docker.webp" />
+          </div>
+          <p class="description">
+            A web based scheduling app. Utilizes Vue 3 for the frontend, Django
+            Rest Framework for the backend, and docker to hold it all together.
+          </p>
+          <ul>
+            <li>Vue 3</li>
+            <li>Django Rest Framework</li>
+            <li>Docker</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3 class="title">Blockchain Education</h3>
+          <div class="images">
+            <img src="react.png" />
+            <img src="eth.png" />
+          </div>
+          <p class="description">
+            An online course website built using React.JS, Solidity, and
+            Express. Teaches the fundamentals of blockchain development and
+            provides an in house code editor to compile and deploy smart
+            contracts.
+          </p>
+          <ul>
+            <li>React</li>
+            <li>Solidity</li>
+            <li>Project management</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3 class="title">Ignite Design System</h3>
+          <div class="images">
+            <img src="stencil.png" />
+            <img src="angular.svg" />
+            <img src="nest.png" />
+          </div>
+          <p class="description">
+            A library of 100+ UI components and design tokens used by hundreds
+            of developers across an enterprise HR company. Also, a custom built
+            documentation website built in Angular 13+ and a NestJs backend
+          </p>
+          <ul>
+            <li>Software Development Life Cylce</li>
+            <li>Code review, teamwork, semantic versioning</li>
+            <li>Communication and collaboration</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3 class="title">Golf.AI</h3>
+          <div class="images">
+            <img src="p5js.svg" />
+          </div>
+          <p class="description">
+            A simple but fun web app to build a mini golf course and have the
+            computer learn the optimal way to reach the end. Built using p5.js
+            and path finding algorithms.
+          </p>
+          <ul>
+            <li>Path finding algorithms</li>
+            <li>Machine learning</li>
+            <li>HTML Canvas development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

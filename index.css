@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -7,13 +8,19 @@ html, body {
     color: white;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+}
+
 .container {
     display: grid;
     grid-template: 1fr / 1fr 4fr;
     height: 100%;
     width: 100%;
-    padding: 5rem;
-    box-sizing: border-box;
 }
 
 /* Profile section */
@@ -21,8 +28,11 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1rem;
     align-items: center;
+    text-align: center;
 }
+
 .profile img {
     border-radius: 25%;
     width: 50%;
@@ -33,30 +43,38 @@ html, body {
     margin-bottom: 0;
 }
 
+.contact {
+    display: flex;
+}
+
+.contact a {
+    width: 50%;
+}
+
+
 /* Portfolio section */
 .portfolio {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
-}
-
-.portfolio img {
-    width: 5rem;
-    height: 5rem;
+    padding: 1rem;
+    gap: 1rem;
 }
 
 .portfolio .project {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.portfolio .project:hover {
+    box-shadow: 0 0 10px 5px white;
 }
 
 div.images {
-    width: 35%;
-    margin: auto;
+    width: 25%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -64,6 +82,7 @@ div.images img {
     width: calc(50% - 0.5rem);
     height: auto;
 }
+
 div.info {
     width: 50%;
     margin-left: 1rem;
@@ -72,6 +91,7 @@ div.info {
 .portfolio .title {
     font-size: 2rem;
 }
+
 .portfolio .description {
     font-size: 1.2rem;
 }
