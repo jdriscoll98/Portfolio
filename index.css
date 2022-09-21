@@ -23,6 +23,12 @@ ul {
     width: 100%;
 }
 
+@media (max-width: 600px) {
+    .container {
+        grid-template: 5fr / 1fr;
+    }
+}
+
 /* Profile section */
 .profile {
     display: flex;
@@ -59,6 +65,21 @@ ul {
     padding: 1rem;
     gap: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+    .portfolio {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .portfolio {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    }
+}
+
+
+
 
 .portfolio .project {
     display: flex;
